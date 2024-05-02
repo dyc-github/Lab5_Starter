@@ -1,0 +1,12 @@
+1. Why is it important to put thought into your IDs & Classes when it comes to technology intersections? (e.g. how HTML, CSS, and JS intersect)
+This is because a bad class name can make your code hard to read later. Let's say you have a div that you gave the id "thing" now if you refer to this id in the CSS or javascript other people have no clue what this id is or why it's important.
+2. What are Data attributes? Why might they be useful? How do you access them? What are the implications of using Data attributes when it comes to things like microdata?
+Data attributes are attributes which have no established meaning but enable us to store data in html objects which we can use in our javascript. A good example is if we make a bunch of task objects we can have a completed attribute which will allow us to inform how our javascript should change this object (though I think that html actually already has the input checkbox which makes a completed attribute irrelevant). 
+3. What is a DOM fragment? Why are they powerful?
+A DOM fragment is essentially a stripped down html document that can contain elements. They're powerful because they allow us to create elements without changing the document then populate the document all at once.
+4. What is the point of a “Virtual DOM”? What do you gain? What do you lose?
+The idea of a Virtual DOM is a simulated version of the Document Object Model present in browsers. This enables frameworks more flexibility and means we can update elements much faster than the actual DOM for complex applications. However, when it comes to simple applications a virtual DOM is actually slower as it adds many unnecessary complications. 
+5. In JavaScript, usually you can reference every attribute of an element with a dot selector followed by the attribute name, except for the class attribute, which is className. Why is this so?
+I would assume it's because you can have multiple class names for an element. 
+6. What is the difference between using addEventListener() and something like onClick() ? What are the advantages / disadvantages of both?
+addEventListener generally listens for any event specified. onClick is there specifically for an onClick event. onClick is a lot more straightforward as you just set the function you want on a click. However, addEventListener is much more flexible, for example you can add the equivalent of multiple on click events at different times.
