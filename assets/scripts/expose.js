@@ -19,6 +19,7 @@ let horns = {
     hasConfetti: true,
   },
 };
+const jsConfetti = new JSConfetti();
 
 function init() {
   initSelector();
@@ -26,14 +27,7 @@ function init() {
   initPlaySoundButton();
 }
 
-//selector
-//listenOnSelect obj =>
-//setImage
-//setAudio
-//hasConfetti
-
 function addConfetti (){
-  const jsConfetti = new JSConfetti();
   jsConfetti.addConfetti();
 }
 
